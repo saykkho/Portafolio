@@ -3,14 +3,14 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0px;
-    font-family:poppins;
+    font-family:"Poppins";
 }
 
 body{
-    background-color:#12151a;
+    background:linear-gradient(170deg, #12151a, rgb(160, 159, 159));
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -39,10 +39,10 @@ body{
     transition: 0.5s;
 }
 .navbar a:hover{
-    color:aqua;
+    color: rgb(102, 106, 246);
 }
 .navbar a.active{
-    color: aqua;
+    color: rgb(102, 106, 246);
 }
 .home{
     position: relative;
@@ -63,7 +63,7 @@ body{
 }
 
 .home-content h3 span{
-    color: rgb(2, 185, 185);
+    color: rgb(102, 106, 246);
 
 }
 
@@ -81,7 +81,217 @@ body{
 .home-content p{
     font-size: 16px;
     color: white;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
 }
+
+ /*about me*/
+
+.aboutme-content{
+    height: 400px;
+}
+
+.aboutme-content h1{
+    color: white;
+    position: relative;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 56px;
+    font-weight: 700;
+    margin: 40px;
+}
+.aboutme-content h3{
+    color: white;
+    position: relative;
+    text-align: center;
+
+
+}
+
+/*projects section*/
+
+.section-projects{
+    padding: 100px;
+}
+
+.projects-title{
+    color: rgb(160, 163, 253);
+    text-align: center;
+    padding-top: 0px;
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0px 50px;
+}
+
+/*Projects*/
+.projects{
+    display: grid;
+    justify-content: space-evenly;
+    padding-top: 50px;  
+    grid-template-columns: auto auto ;
+    margin: 100px;
+    position: relative;
+    gap: 150px;
+    
+
+}
+/* Weather app js*/
+.weather-app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.weather-app figure{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.weather-app figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.weather-app figure .weather-app-capa{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(180, 183, 255, 0.8);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.weather-app figure:hover > .weather-app-capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.weather-app figure:hover > .weather-app-capa h3{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+
+.weather-app figure .weather-app-capa h3{
+    color: rgb(152, 129, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    transition: all 500ms ease-out;
+    margin-top: 20px;
+}
+
+
+.weather-app figure .weather-app-capa p{
+    color: rgb(143, 120, 245);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.weather-app-sin-subrayado{
+    text-decoration: none;
+}
+
+/*Projecto 2*/
+.cars{
+    background-color: green;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+    display: flex;
+}
+
+/*Projecto 3*/
+.projecto-3{
+    background-color: lightblue;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+/*Projecto 4*/
+.projecto-4{
+    background-color: black;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+/*Projecto 5*/
+.projecto-5{
+    background-color: orange;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+/*Projecto 6*/
+.projecto-6{
+    background-color: blue;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+/*Projecto 7*/
+.projecto-7{
+    background-color: purple;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+/*Projecto 8*/
+.projecto-8{
+    background-color: yellow;
+    padding: 25px;
+    margin: 0 10px;
+    height: 250px;
+    width: 250px;
+    border-radius: 25px;
+}
+
+
+/*contact me*/
+.caja-contacto{
+    height: 1000px;
+}
+
+.contacto-title{
+    color: rgb(160, 163, 253);
+    text-align: center;
+    padding-top: 0px;
+    font-size: 56px;
+    font-weight: 700;
+    margin: 0px 50px;
+}
+
+
+
+
 /*keyframes*/
 
 @keyframes slideBottom{
@@ -114,40 +324,27 @@ body{
         transform: translateX(0px) ;
         opacity: 1;
     }
- }
+}
 
-/* A partir de ahora edito el about me*/
+@keyframes agrandar {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }     
 
-.informacion{
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+@media (max-width:600px){
+  .header{
     position: relative;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    padding: 70px 10%;
-    color: white;
-}
-
-.informacion h1{
-font-size: 50px;
-animation: slideLeft 1s ease forwards ;
-opacity: 0;
-}
-
-.informacion p{
-    animation: slideLeft .5s ease forwards;
-}
-/*keyframes*/
-
-@keyframes slideLeft {
-    0%{
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100%{
-        transform: translateX(0);
-        opacity: 1;
-    }
-
+    width: 400px;
+  }
 }
