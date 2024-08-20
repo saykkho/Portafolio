@@ -87,58 +87,79 @@ body{
 
  /*about me*/
 
-.aboutme-content{
-    height: 400px;
+.inner{
+    padding-top: 20px;
+
 }
 
-.aboutme-content h1{
-    color: white;
-    position: relative;
+.skills{
     text-align: center;
-    padding-top: 0px;
-    font-size: 56px;
-    font-weight: 700;
-    margin: 40px;
-}
-.aboutme-content h3{
     color: white;
+    padding: 1rem;
     position: relative;
-    text-align: center;
+    font-size: 32px;
 }
 
-.container-skills{
+.skills:after{
+    content: "";
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color:white;
+}
+.header h1{
+    color: white;
+    position: relative;
+    margin: auto;
+}
+
+.container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns:repeat(3, 1fr);
     justify-content: center;
     align-items: center;
-    grid-gap: 1rem;
-    padding: 1rem 80px;
-    font-size: 1.2rem;
+    grid-gap: 20px;
 }
 
 .skill-box{
-    display: grid;
-    grid-template-rows: auto;
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
 }
 
-.skill-title-1{
+.skill-title{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0,5rem;
+    padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
-.image-html{
+.skill-title h3{
+    color: white;
+    margin: 0.5rem;
+}
+.p-center{
+    position: relative;
+    margin: auto;
+    text-align: center;
+
+}
+
+.skill-icon{
     width: 90px;
     height: 90px;
-    position: relative;
     border-radius: 45px;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+
+
 /*projects section*/
 
 .section-projects{
