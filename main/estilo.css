@@ -100,6 +100,10 @@ body{
     font-size: 32px;
 }
 
+.skills p{
+    font-size: 30px;
+}
+
 .skills:after{
     content: "";
     position: relative;
@@ -198,8 +202,8 @@ body{
 
 .weather-app figure{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 255px;
+    width: 375px;
     overflow: hidden;
     border-radius: 25px;
     cursor: pointer;
@@ -217,7 +221,7 @@ body{
     top: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(123, 127, 243, 0.9);
+    background: rgb(70, 0, 169);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -248,7 +252,7 @@ body{
 
 
 .weather-app figure .weather-app-capa p{
-    color: rgb(143, 120, 245);
+    color: rgb(251, 251, 251);
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
@@ -271,8 +275,8 @@ body{
 
 .login-register figure{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 255px;
+    width: 375px;
     overflow: hidden;
     border-radius: 25px;
     cursor: pointer;
@@ -289,7 +293,7 @@ body{
     top: 0px;
     width: 100%;
     height: 100%;
-    background: rgba(123, 127, 243, 0.9);
+    background: rgb(70, 0, 169);
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
@@ -446,6 +450,7 @@ body{
 
 .description{
     height: 250px;
+    
 }
 
 
