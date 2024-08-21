@@ -402,6 +402,54 @@ body{
     margin: 0px 50px;
 }
 
+/*parte del contacto*/
+.caja-contacto{
+    top: 30px;
+    height: 500px;
+    width: 600px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    padding: 0.5rem;
+    margin: auto;
+}
+.name-contacto h3{
+    position: relative;
+    top: -2px;
+}
+
+.name-contacto{
+    height: 25px;
+    width: 240px;
+    border-radius: 5px;
+    padding: 0,5rem;
+}
+.name-contacto:placeholder-shown{
+    padding: 0.5rem;
+}
+
+.email h3{
+    position: relative;
+    top: 2px;
+}
+
+.email{
+    height: 25px;
+    width: 240px;
+    border-radius: 5px;
+    padding: 0,5rem;
+}
+
+.email:placeholder-shown{
+    padding: 0.5rem;
+}
+
+.description{
+    height: 250px;
+}
+
+
+
 
 
 
