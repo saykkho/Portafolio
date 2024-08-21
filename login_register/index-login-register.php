@@ -12,7 +12,7 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up">
-            <form>
+            <form action="php/registro-usuario.php" method="POST">
                 <h1>Create Account</h1>
                 <div class="social-icons">
                     <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
@@ -21,9 +21,9 @@
                     <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
                 </div>
                 <span>or use your email for registeration</span>
-                <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <input type="text" placeholder="Name"  name="nombre_completo">
+                <input type="email" placeholder="Email" name="email">
+                <input type="password" placeholder="Password" name="contraseña">
                 <button>Sign Up</button>
             </form>
         </div>
