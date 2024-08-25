@@ -7,7 +7,8 @@
 }
 
 body{
-    background:linear-gradient( #12151a, rgb(65, 64, 66));
+    background:linear-gradient( #8b9ff6,rgb(249, 249, 249));
+    
 }
 .header{
     position: absolute;
@@ -20,6 +21,9 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    position: sticky;
+    background-color:#588cfd;
+    height: 60px;
 }
 
 .logo{
@@ -57,7 +61,7 @@ body{
 .home-content h3{
     font-size: 32px;
     font-weight: 700;
-    opacity: 0;
+    opacity: 1;
     animation: slideBottom 1s ease forwards;
     color:white;
 }
@@ -92,16 +96,21 @@ body{
 
 }
 
+
+.title-about-me{
+padding: 100px;
+}
 .skills{
     text-align: center;
     color: white;
     padding: 1rem;
     position: relative;
     font-size: 32px;
+    padding: 125px;
 }
 
 .skills p{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .skills:after{
@@ -393,8 +402,17 @@ body{
 
 
 /*contact me*/
-.contact_us_2 * {
-    font-family: Nunito, sans-serif;
+
+.title-contact-me{
+    color: rgb(160, 163, 253);
+    text-align: center;
+    padding-top: 0px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0px 50px;
+  }
+.contact_us_2{
+    font-family: "poppins"
   }
   
   .contact_us_2 .text-blk {
@@ -576,6 +594,7 @@ body{
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+    font-size: large;
   }
   
   .contact_us_2 .submit-btn {
@@ -761,17 +780,7 @@ body{
   }
   @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
 
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-body {
-  margin: 0;
-}
 
 .wk-desk-1 {
   width: 8.333333%;
@@ -1026,4 +1035,4 @@ html{
     position: relative;
     width: 400px;
   }
-}
+}   }
