@@ -1,0 +1,186 @@
+<div>
+    <h1 class="projects-title">Projects</h1>
+
+<div class="projects">
+    <a href="/weather-app/index-weather.html" class="weather-app">
+    <div class="weather-app">
+        <figure>
+             <img src="/images/Portada weather app.png" alt="Imagen de la portada del projecto 1 ">
+             <div class="weather-app-capa">
+                <h3>Weather App Js</h3>
+                <p>Este projecto hecho con JavaScript consiste en una App del tiempo que proporciona información sobre las condiciones meteorológicas</p>
+             </div>
+        </figure>
+    </div>
+</a>
+
+<a href="/login_register/index-login-register.php">
+    <div class="login-register">
+        <figure>
+            <img src="/images/Portada login register.png" alt="Imagen de la portada del projecto 2">
+            <div class="login-register-capa">
+                <h3>Login-Register</h3>
+                <p>Este projecto esta hecho con HTML, CSS, y JS y es un login y register básico</p>
+            </div>
+        </figure>
+    </div>
+</a>
+
+    </div>
+    ---------------------------------
+    /*Projects*/
+.projects{
+    display: grid;
+    justify-content: space-evenly;
+    padding-top: 50px;  
+    grid-template-columns: auto auto ;
+    margin: 100px;
+    position: relative;
+    gap: 150px;
+    
+
+}
+/* Weather app js*/
+.weather-app{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.weather-app figure{
+    position: relative;
+    height: 255px;
+    width: 375px;
+    overflow: hidden;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+
+.weather-app figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.weather-app figure .weather-app-capa{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(70, 0, 169);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.weather-app figure:hover > .weather-app-capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.weather-app figure:hover > .weather-app-capa h3{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+
+.weather-app figure .weather-app-capa h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    transition: all 500ms ease-out;
+    margin-top: 20px;
+}
+
+
+.weather-app figure .weather-app-capa p{
+    color: rgb(251, 251, 251);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.weather-app-sin-subrayado{
+    text-decoration: none;
+}
+
+/*Projecto login register*/
+.login-register{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+}
+
+.login-register figure{
+    position: relative;
+    height: 255px;
+    width: 375px;
+    overflow: hidden;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.login-register figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.login-register figure .login-register-capa{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgb(70, 0, 169);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.login-register figure:hover > .login-register-capa{
+    opacity: 1;
+    visibility: visible;
+}
+
+.login-register figure:hover > .login-register-capa h3{
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+
+.login-register figure .login-register-capa h3{
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-bottom: 120px;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+    transition: all 500ms ease-out;
+    margin-top: 20px;
+}
+
+
+.login-register figure .login-register-capa p{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.login-register-sin-subrayado{
+    text-decoration: none;
+}
