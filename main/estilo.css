@@ -8,8 +8,9 @@
 }
 
 body{
-
-    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+  background: radial-gradient(ellipse 80% 80% at 50% -20%, rgba(70, 67, 255, 0.3), rgba(63, 63, 63, 0));
+  background-color: #171717; /* Color neutral-950 */
+  min-height: 100vh;
 }
 
 
@@ -24,9 +25,8 @@ body{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
-    position: sticky;
-
-    height: 60px;
+    position: absolute;
+    height: 90px;
 }
 
 .logo{
@@ -100,10 +100,17 @@ body{
 
 
 .title-about-me{
-padding: 45px;
+  padding-top: 200px;
+  font-size: 40px;
+  text-align: left;
+  max-width: 1400px;
+  padding-left: 405px;
+  padding-bottom: 30px;
+  color: white;
 }
+
 .skills{
-    text-align: center;
+  text-align: center;
     color: white;
     padding: 1rem;
     position: relative;
@@ -111,8 +118,13 @@ padding: 45px;
     padding: 45px;
 }
 
-.skills p{
+.about-me-info h2{
     font-size: 20px;
+    text-align: left;
+    max-height: 300px;
+    max-width: 1100px;
+    padding-left: 405px;
+    color: white;
 }
 
 .skills:after{
@@ -176,7 +188,24 @@ padding: 45px;
     align-items: center;
 }
 
+.foto-personal{
+  height: 80px;
+  color: blue;
+  gap: 1rem;
+  position: relative;
+  left:388px;
+  top: 198px;
+}
+.span-foto{
+  background-color: #ebf8ff; /* bg-blue-100 */
+  color: #1e40af; /* text-blue-800 */
+  font-size: 0.75rem; /* text-xs */
+  font-family: 'serif'; /* font-serif */
+  margin-inline-end: 0.625rem; /* me-2 */
+  padding: 0.125rem 0.625rem; /* px-2.5 py-0.5 */
+  border-radius: 0.25rem; /* rounded */
 
+}
 
 /*projects section*/
 
@@ -348,61 +377,6 @@ padding: 45px;
 
 .login-register-sin-subrayado{
     text-decoration: none;
-}
-
-/*Projecto 3*/
-.projecto-3{
-    background-color: lightblue;
-    padding: 25px;
-    margin: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
-}
-/*Projecto 4*/
-.projecto-4{
-    background-color: black;
-    padding: 25px;
-    margin: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
-}
-/*Projecto 5*/
-.projecto-5{
-    background-color: orange;
-    padding: 25px;
-    margin: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
-}
-/*Projecto 6*/
-.projecto-6{
-    background-color: blue;
-    padding: 25px;
-    margin: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
-}
-/*Projecto 7*/
-.projecto-7{
-    background-color: purple;
-    padding: 25px;
-    margin: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
-}
-/*Projecto 8*/
-.projecto-8{
-    background-color: yellow;
-    padding: 25px;
-    margin: 0 10px;
-    height: 250px;
-    width: 250px;
-    border-radius: 25px;
 }
 
 
