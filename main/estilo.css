@@ -244,32 +244,86 @@ font-size: 16px;
 
 .projectos-titulo{
     position: relative;
-    left: 430px;
-    padding-bottom: 30px;
-    font-size: 32px;
-}
-.projecto-1{
-    max-height: 250px;
-    max-width: 450px;
-    background-color: red;
-    position: relative;
-    left: 406px;
-    border-radius: 36px;
-    box-shadow: white;
+    left: 500px;
+    top: 0px;
+    font-size: 48px;
 }
 .img-porjecto-1{
     border-radius: 20px;
     height: 350px;
-    width: 100%;
-    
+    width: auto;
+    position: relative;
+    left: 150px;
 }
 
-.container-flex{
-    display: flex;
-    flex-direction: row;
+.img-porjecto-1:hover{
+    transform: scale(1.01);
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}    
+
+.div1 { grid-area: 2 / 2 / 5 / 4; }
+.div2 { grid-area: 2 / 4 / 5 / 5; }
  
+
+.div2 h2{
+    position: relative;
+    left: auto;
+    padding: 15px;
+    font-size: 23px;
+}
+
+.div2 p{
+    position: relative;
+    left: auto;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.HTML{
+    position: relative;
+    left: auto;
+    padding: 15px;
+    background-color: #eb812a;
+    color: #d84308; 
+    font-size: 0.90rem; 
+    font-family: 'poppins';
+    margin-inline-end: 0.625rem; 
+    padding: 0.125rem 0.625rem; 
+    border-radius: 20px; 
+}
+
+.CSS{
+    position: relative;
+    left: auto;
+    padding: 10px;
+    background-color: #6e89ff;
+    color: #0839da; 
+    font-size: 0.90rem; 
+    font-family: 'poppins';
+    margin-inline-end: 0.625rem; 
+    padding: 0.125rem 0.625rem; 
+    border-radius: 20px; 
+}
+
+.PHP{
+    position: relative;
+    left: auto;
+    padding: 10px;
+    background-color: rgb(120, 124, 180);
+    color: #000000; 
+    font-size: 0.90rem; 
+    font-family: 'poppins';
+    margin-inline-end: 0.625rem; 
+    padding: 0.125rem 0.625rem; 
+    border-radius: 20px;
+}
 /*keyframes*/
 
 @keyframes slideBottom{
